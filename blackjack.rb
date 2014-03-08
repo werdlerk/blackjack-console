@@ -195,17 +195,12 @@ def cards_total_value(cards)
   total_value = 0
 
   cards.each do |card| 
-    value = card_value(card)
-    if (value == 11)
-      aces_count += 1
-    end
-    total_value += value
+    total_value += card_value(card)
   end
 
   # Take into account any aces if the total value is higher then 21
-  while total_value > 21 && aces_count > 0
-    total_value -= 10
-    aces_count -= 1
+  cards.select{ |card| card[:type] == "ace" }.count.times do
+    total_value -= 10 if total_value > 21
   end
 
   total_value
