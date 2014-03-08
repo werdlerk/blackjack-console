@@ -17,7 +17,7 @@ require 'pry'
 @dealer_cards = []
 @play_again = true
 
-def center_puts str
+def center_puts(str)
   puts str.center(@fullscreen_width)
 end
 
@@ -155,7 +155,7 @@ def ask_play_again
   choice
 end
 
-def announce text,connection=true
+def announce(text,connection=true)
   connecting_line = ''.ljust(@inner_width) + " |"
   single_line = "+" + "-" * (@inner_width) + "+"
   empty_line = "|" + String.new.ljust(@inner_width) + "|"
@@ -307,6 +307,8 @@ def reset_game
   @player_cards.clear
 end
 
+
+# Game logic from here on
 
 welcome
 
