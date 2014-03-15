@@ -14,3 +14,4 @@ Please note a minimal console width of 154 characters is required for running th
  * Only two players are supported, one of those being the dealer
  * Cards are chosen at random, the game doesn't track one or more deck of cards. This makes it possible to draw exactly the same cards but prevents card counting :-)
  
+For more more information and screenshots, see the post at http://codefish.org/24/ruby/blackjack-console-game/.
