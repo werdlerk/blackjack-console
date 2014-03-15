@@ -10,4 +10,4 @@ Please note a minimal console width of 154 characters is required for running th
 
 
  
-For more more information and screenshots, see the post at http://codefish.org/24/ruby/blackjack-console-game/.
+For more more information and screenshots, see the post at http://codefish.org/37/ruby/blackjack-console-game-continued.
